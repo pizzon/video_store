@@ -1,1 +1,3 @@
-# This is your application's entrypoint
+from src.interface import Interface
+
+Interface("Code Platoon").run()
