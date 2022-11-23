@@ -55,6 +55,6 @@ class Store:
 
         with open(path, 'w') as csvfile:
             inventory_csv = csv.writer(csvfile, delimiter=',')
-            inventory_csv.writerow(['id','titles', 'copies available'])
+            inventory_csv.writerow(['id','title', 'copies_available'])
             for movie in self.store_inventory:
                 inventory_csv.writerow([movie['id'], movie['title'], movie['copies_available']])
